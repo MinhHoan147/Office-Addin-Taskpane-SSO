@@ -12,13 +12,13 @@ Office.initialize = function () {
   if (Office.context.ui.messageParent) {
     userAgentApp.handleRedirectCallback(authCallback);
 
-    // The very first time the add-in runs on a developer's computer, msal.js hasn't yet
-    // stored login data in localStorage. So a direct call of acquireTokenRedirect
-    // causes the error "User login is required". Once the user is logged in successfully
-    // the first time, msal data in localStorage will prevent this error from ever hap-
-    // pening again; but the error must be blocked here, so that the user can login
-    // successfully the first time. To do that, call loginRedirect first instead of
-    // acquireTokenRedirect.
+    /* The very first time the add-in runs on a developer's computer, msal.js hasn't yet
+    stored login data in localStorage. So a direct call of acquireTokenRedirect
+    causes the error "User login is required". Once the user is logged in successfully
+    the first time, msal data in localStorage will prevent this error from ever hap-
+    pening again; but the error must be blocked here, so that the user can login
+    successfully the first time. To do that, call loginRedirect first instead of
+    acquireTokenRedirect. */
     if (localStorage.getItem("loggedIn") === "yes") {
       userAgentApp.acquireTokenRedirect(requestObj);
     } else {
