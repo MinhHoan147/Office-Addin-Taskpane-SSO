@@ -22,10 +22,10 @@ Office.initialize = function () {
     if (localStorage.getItem("loggedIn") === "yes") {
       userAgentApp.acquireTokenRedirect(requestObj);
     } else {
-      // This will login the user and then the (response.tokenType === "id_token")
-      // path in authCallback below will run, which sets localStorage.loggedIn to "yes"
-      // and then the dialog is redirected back to this script, so the
-      // acquireTokenRedirect above runs.
+      /* This will login the user and then the (response.tokenType === "id_token")
+       path in authCallback below will run, which sets localStorage.loggedIn to "yes"
+       and then the dialog is redirected back to this script, so the
+       acquireTokenRedirect above runs. */
       userAgentApp.loginRedirect(requestObj);
     }
   }
