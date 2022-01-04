@@ -2,6 +2,11 @@ parameters:
 - name: webView
   type: string
   default: "edge-chromium"
+  
+parameters:
+- name: webView
+  type: string
+  default: "edge-chromium"
 
 steps:
   - task: CmdLine@2
