@@ -15,8 +15,8 @@ export function dialogFallback() {
   showLoginPopup(url);
 }
 
-// This handler responds to the success or failure message that the pop-up dialog receives from the identity provider
-// and access token provider.
+/* This handler responds to the success or failure message that the pop-up dialog receives from the identity provider
+ and access token provider. */
 async function processMessage(arg) {
   console.log("Message received in processMessage: " + JSON.stringify(arg));
   let messageFromDialog = JSON.parse(arg.message);
