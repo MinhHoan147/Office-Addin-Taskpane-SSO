@@ -4,7 +4,4 @@ steps:
   inputs:
     command: custom
     customCommand: 'run build'
-steps:
-- task: Npm@2
-  displayame: 'Build'
- 
+
