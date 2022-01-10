@@ -5,7 +5,4 @@
   "extends": [
     "plugin:office-addins/recommended"
   ]
-    "extends": [
-    "plugin:office-addins/recommended"
-  ]
 }
