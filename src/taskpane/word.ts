@@ -34,7 +34,7 @@ export function writeDataToOfficeDocument(result: Object): Promise<any> {
     const documentBody: Word.Body = context.document.body;
     for (let i = 0; i < myData.length; i++) {
       if (data[i] !== null) {
-        documentBody.insertParagraph(data[i], "End");
+        documentBody.insertParagraph(myData[i], "End");
       }
     }
     return context.sync();
