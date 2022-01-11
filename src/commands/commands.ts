@@ -38,7 +38,6 @@ function getGlobal() {
     : undefined;
 }
 
-// 
 const g = getGlobal() as any;
 
 // The add-in command functions need to be available in global scope
