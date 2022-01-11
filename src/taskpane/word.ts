@@ -17,7 +17,7 @@ Office.onReady((info) => {
 //write data
 export function writeDataToOfficeDocument(result: Object): Promise<any> {
   return Word.run(function (context) {
-    let data: string[] = [];
+    let myData: string[] = [];
     let userProfileInfo: string[] = [];
     userProfileInfo.push(result["displayName"]);
     userProfileInfo.push(result["jobTitle"]);
@@ -32,7 +32,7 @@ export function writeDataToOfficeDocument(result: Object): Promise<any> {
     }
 
     const documentBody: Word.Body = context.document.body;
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < myData.length; i++) {
       if (data[i] !== null) {
         documentBody.insertParagraph(data[i], "End");
       }
