@@ -47,7 +47,7 @@ export async function getGraphData(): Promise<void> {
   }
 }
 
-//Function To Handel 
+//Function To 
 function handleAADErrors(exchangeResponse: any): void {
   // On rare occasions the bootstrap token is unexpired when Office validates it,
   // but expires by the time it is sent to AAD for exchange. AAD will respond
