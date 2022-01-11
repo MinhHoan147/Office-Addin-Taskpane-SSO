@@ -14,7 +14,7 @@ Office.onReady((info) => {
     });
   }
 });
-//Function
+//write data to office doc
 export function writeDataToOfficeDocument(result: Object): Promise<any> {
   return Word.run(function (context) {
     let data: string[] = [];
