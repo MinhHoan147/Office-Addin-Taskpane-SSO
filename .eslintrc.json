@@ -1,5 +1,4 @@
 {
-  
   "plugins": [
     "office-addins"
   ],
@@ -7,6 +6,5 @@
     "plugin:office-addins/recommended"
   ],
    "intends":[
-   ],
-     
+   ],   
 }
