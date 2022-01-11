@@ -27,7 +27,7 @@ export function writeDataToOfficeDocument(result: Object): Promise<any> {
 
     for (let i = 0; i < userProfileInfo.length; i++) {
       if (userProfileInfo[i] !== null) {
-        data.push(userProfileInfo[i]);
+        myData.push(userProfileInfo[i]);
       }
     }
 
