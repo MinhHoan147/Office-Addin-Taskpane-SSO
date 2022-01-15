@@ -41,4 +41,5 @@ export function writeDataToOfficeDocument(result: Object): void {
       throw asyncResult.error.message;
     }
   });
+  
 }
