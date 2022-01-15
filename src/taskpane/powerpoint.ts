@@ -17,6 +17,7 @@ Office.onReady((info) => {
 
 //write data to office document
 export function writeDataToOfficeDocument(result: Object): void {
+  
   let data: string[] = [];
   let userProfileInfo: string[] = [];
   userProfileInfo.push(result["displayName"]);
