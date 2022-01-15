@@ -39,4 +39,5 @@ export function writeDataToOfficeDocument(result: Object): Promise<any> {
     }
     return context.sync();
   });
+  
 }
