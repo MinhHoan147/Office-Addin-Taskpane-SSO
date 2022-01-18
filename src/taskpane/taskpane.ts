@@ -24,7 +24,7 @@ export function writeDataToOfficeDocument(results: string[]): Promise<any> {
           powerpoint.writeDataToOfficeDocument(results);
           break;
         case Office.HostType.Word:
-          word.writeDataToOfficeDocument(result);
+          word.writeDataToOfficeDocument(results);
           break;
         default:
           throw "Unsupported Office host application: This add-in only runs on Excel, Outlook, PowerPoint, or Word.";
