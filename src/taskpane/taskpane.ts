@@ -15,7 +15,7 @@ export function writeDataToOfficeDocument(results: string[]): Promise<any> {
     try {
       switch (Office.context.host) {
         case Office.HostType.Excel:
-          excel.writeDataToOfficeDocument(result);
+          excel.writeDataToOfficeDocument(results);
           break;
         case Office.HostType.Outlook:
           outlook.writeDataToOfficeDocument(result);
