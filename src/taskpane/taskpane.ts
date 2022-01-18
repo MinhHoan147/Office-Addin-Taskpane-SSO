@@ -10,7 +10,7 @@ import * as outlook from "./outlook";
 import * as powerpoint from "./powerpoint";
 import * as word from "./word";
 
-export function writeDataToOfficeDocument(result: string[]): Promise<any> {
+export function writeDataToOfficeDocument(results: string[]): Promise<any> {
   return new Promise(function (resolve, reject) {
     try {
       switch (Office.context.host) {
